@@ -1,14 +1,17 @@
 {
 	"files": {
-		"config.json": { "overwrite": false, "hash": "6ee32cdd4bbb6fb4a6968553e0c78b39486b00e9d56854cc8fa6158348674cba" },
-		"index.js": "e2f709398a51ea52e540398a00d7e350df42e456eb8344fd5f6db74fcb54bf44",
-		"module.json": "7d4d95bbefe25704554b680829403efd10c482f30151cd8f31ea048cab97faa4",
-		"README.md": "5fbbd21807727383fd7fc9faa4774b48ea5cb6f19421d7c6b41b29a9d9a4ff46"
+		"README.md": "a7b55ee6420bd492e1195d60d0ac0f53564bdd476d1e26510e156b584fdac5a1",
+		"config.json": {
+			"overwrite": false,
+			"hash": "c3a14ae7d6f83c09ac59ca4ac422b228811e1d8310d01afa2832cd8a097c1f0b"
+		},
+		"index.js": "ade06ba0f41daf65dc1024cee6f4dacbb322939f28907734739d3ece95178a89",
+		"module.json": "5cd1b2699c1b9f8b7198785ec81a27883b0cb52efe795aa33515cbc59464186c"
 	},
 	"defs": {
-        "C_END_MOVIE": 1,
-        "C_REQUEST_USER_PAPERDOLL_INFO": 1,
-        "S_ANSWER_INTERACTIVE": 2,
-        "S_PLAY_MOVIE": 1
+		"C_END_MOVIE": 1,
+		"C_REQUEST_USER_PAPERDOLL_INFO": 1,
+		"S_ANSWER_INTERACTIVE": 2,
+		"S_PLAY_MOVIE": 1
 	}
 }

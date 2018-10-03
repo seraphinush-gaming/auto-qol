@@ -1,6 +1,5 @@
 {
     "disableAutoUpdate": false,
     "options": { "niceName": "auto-qol" },
-    "servers": ["https://raw.githubusercontent.com/seraphinush-gaming/auto-qol/master/"],
-    "supportUrl": "https://github.com/seraphinush-gaming/auto-qol/issues"
+    "servers": ["https://raw.githubusercontent.com/seraphinush-gaming/auto-qol/master/"]
 }

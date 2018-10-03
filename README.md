@@ -15,8 +15,8 @@ tera-proxy compilation module for automated functions
 
 ## Info
 - Compiled modules :
-  - auto-cutscene (mod. by [baldera-mods](https://github.com/baldera-mods), branch [seraphinush-gaming](https://github.com/ylennia-archives/auto-cutscene))
-  - auto-inspect (branch [seraphinush-gaming](https://github.com/ylennia-archives/auto-inspect))
+  - `auto-cutscene` (mod. by [baldera-mods](https://github.com/baldera-mods), branch [seraphinush-gaming](https://github.com/ylennia-archives/auto-cutscene))
+  - `auto-inspect` (branch [seraphinush-gaming](https://github.com/ylennia-archives/auto-inspect))
 - **Support seraph via paypal donations, thanks in advance : [paypal](https://www.paypal.me/seraphinush)**
 
 ## Changelog

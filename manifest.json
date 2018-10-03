@@ -1,0 +1,14 @@
+{
+	"files": {
+		"config.json": { "overwrite": false, "hash": "6ee32cdd4bbb6fb4a6968553e0c78b39486b00e9d56854cc8fa6158348674cba" },
+		"index.js": "e2f709398a51ea52e540398a00d7e350df42e456eb8344fd5f6db74fcb54bf44",
+		"module.json": "7d4d95bbefe25704554b680829403efd10c482f30151cd8f31ea048cab97faa4",
+		"README.md": "5fbbd21807727383fd7fc9faa4774b48ea5cb6f19421d7c6b41b29a9d9a4ff46"
+	},
+	"defs": {
+        "C_END_MOVIE": 1,
+        "C_REQUEST_USER_PAPERDOLL_INFO": 1,
+        "S_ANSWER_INTERACTIVE": 2,
+        "S_PLAY_MOVIE": 1
+	}
+}

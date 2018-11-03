@@ -1,6 +1,9 @@
 # auto-qol
 tera-proxy compilation module for automated functions
 
+## Auto-update guide
+- Create a folder called `auto-qol` in `tera-proxy/bin/node_modules` and download [`module.json`](https://raw.githubusercontent.com/seraphinush-gaming/auto-qol/master/module.json) (right-click save link as...) into the folder
+
 ## Dependency
 - `command` module
 
@@ -22,6 +25,8 @@ tera-proxy compilation module for automated functions
 ## Changelog
 <details>
 
+    2.00
+    - Refactor into submodules
     1.00
     - Initial commit
 

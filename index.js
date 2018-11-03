@@ -1,33 +1,43 @@
-// Version 1.00 r:00
+// Version 2.00 r:00
 'use strict';
 
-const config = require('./config.json');
+class AutoQol {
 
-module.exports = function AutoQol(m) {
-	const cmd = m.command || m.require.command;
+    constructor(mod) {
+        this.mod = mod;
+        this.cmd = mod.command || mod.require.command;
+        this.config = require('./config.json');
+        this.submodules = {};
 
-	// config
-	let enableSkipMovie = config.enableSkipMovie;
+    }
 
-	// command
-	cmd.add('skip', { // skip movie toggle
-		$none() {
-			enableSkipMovie = !enableSkipMovie;
-			send(`auto-cutscene ${enableSkipMovie ? 'en' : 'dis'}abled`);
-		}
-	});
+    destructor() {
+        this.mod = undefined;
+        this.cmd = undefined;
+        this.config = undefined;
+        this.submodules = undefined;
+    }
 
-	// code
-	m.hook('S_PLAY_MOVIE', 1, (e) => {
-		if (!enableSkipMovie) return
-		m.send('C_END_MOVIE', 1, Object.assign({ unk: 1 }, e));
-		return false
-	});
+    initialize(submodules) {
+        if (typeof submodules === 'string')
+            submodules = [submodules];
 
-	m.hook('S_ANSWER_INTERACTIVE', 2, (e) => {
-		m.send('C_REQUEST_USER_PAPERDOLL_INFO', 1, { name: e.name });
-	});
+        for (let submodule of submodules) {
+            if (!this.loadedSubmodules[submodule]) {
+                try {
+                    let req = require(`./submodules/${submodule}`);
+                    this.loadedSubmodules[submodule] = new req(this);
+                    this[submodule] = this.loadedSubmodules[submodule];
+                }
+                catch (e) {
+                    console.log(`[auto-qol] Unable to load submodule ${submodule}: ${e}`);
+                }
+            }
+        }
+    }
 
-	function send(msg) { cmd.message(`: ` + msg); }
+}
 
+module.exports = function AutoQolLoader(mod) {
+    return new AutoQol(mod)
 }

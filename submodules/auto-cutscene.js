@@ -8,7 +8,6 @@ class AutoCutscene {
         // command
         this.parent.cmd.add('skip', {
             '$none': () => {
-                console.log('check');
                 this.enable = !this.enable;
                 this.send(`auto-cutscene ${this.enable ? 'en' : 'dis'}abled`);
             }
@@ -25,7 +24,7 @@ class AutoCutscene {
 
     installHooks() {
         this.parent.mod.hook('S_PLAY_MOVIE', 1, (e) => {
-            if (this.enable) return;
+            if (!this.enable) return;
             this.parent.mod.send('C_END_MOVIE', 1, Object.assign({ unk: 1 }, e));
             return false;
         });

@@ -8,7 +8,7 @@
 		"index.js": "fd30e387c11aee30c717278a455982ca5c3f861710ade1082e1243109ff63ef7",
 		"module.json": "5cd1b2699c1b9f8b7198785ec81a27883b0cb52efe795aa33515cbc59464186c",
 		"submodules/auto-cutscene.js": "5aa8dac1bdde72d2694b2474e7d51ebf0ac419a478641221caf74e35a9a1971c",
-		"submodules/auto-inspect.js": "826b642607107fc92b5ac3cb5d8d552bcc1e20c70583d55b5b6adffe83080199"
+		"submodules/auto-inspect.js": "e8d91b0230c1d1260ee7c80b0108c8a200c01855128bbd338349e899f8c3fc48"
 	},
 	"defs": {
 		"C_END_MOVIE": 1,

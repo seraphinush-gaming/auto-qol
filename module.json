@@ -1,5 +1,5 @@
 {
-    "disableAutoUpdate": false,
+    "disableAutoUpdate": true,
     "options": { "niceName": "auto-qol" },
     "servers": ["https://raw.githubusercontent.com/seraphinush-gaming/auto-qol/master/"]
 }

@@ -1,11 +1,10 @@
 class AutoCutscene {
 
     constructor(parent) {
-        this.enable = parent.config.enableSkipCutscene;
         this.parent = parent;
-        this.parent.initialize("auto-cutscene");
+        this.enable = parent.config.enableCutscene;
 
-        this.installCommand();
+        this.installCommands();
         this.installHooks();
     }
 
@@ -14,19 +13,19 @@ class AutoCutscene {
         this.parent = undefined;
     }
 
-    command() {
+    installCommands() {
         this.parent.cmd.add('skip', { // skip movie toggle
             $none() {
                 this.enable = !this.enable;
-                send(`auto-cutscene ${this.enable ? 'en' : 'dis'}abled`);
+                this.send(`auto-cutscene ${this.enable ? 'en' : 'dis'}abled`);
             }
         });
     }
 
     installHooks() {
-        this.parent.hook('S_PLAY_MOVIE', 1, (e) => {
+        this.parent.mod.hook('S_PLAY_MOVIE', 1, (e) => {
             if (this.enable) return;
-            this.parent.send('C_END_MOVIE', 1, Object.assign({ unk: 1 }, e));
+            this.parent.mod.send('C_END_MOVIE', 1, Object.assign({ unk: 1 }, e));
             return false;
         });
     }

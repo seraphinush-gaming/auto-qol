@@ -1,14 +1,14 @@
 {
 	"files": {
-		"README.md": "6f8e5aa8c6f83cda5de94a1054e9afa5ffe49153db524ebda4a3af491951b76c",
+		"README.md": "c0511d7974c8ab69fe31c4e1e8151c47eed7d0316a2e8c67f55376376958a48b",
 		"config.json": {
 			"overwrite": false,
-			"hash": "c3a14ae7d6f83c09ac59ca4ac422b228811e1d8310d01afa2832cd8a097c1f0b"
+			"hash": "58bc25c10742b45bfc584ccddef6804f0d273226b05a5fa6386e98c57808ecd8"
 		},
-		"index.js": "fd70c0b922d8a1e640776e8da852329474a5e26daae875d58f118f89d189a03f",
-		"module.json": "5cd1b2699c1b9f8b7198785ec81a27883b0cb52efe795aa33515cbc59464186c",
-		"submodules/auto-cutscene.js": "bbb34ab2aee5a89e0df1246c4713fe9b9a17b113266e69f8a88d7850eb05ec0f",
-		"submodules/auto-inspect.js": "34ec8ec9378f46f82e7dc4a8f62c132baf4134c7d343c439ebbace70771e84f4"
+		"index.js": "4e6a2dbafcc308a09e4668ac339975b6ec435ab024851a687774447b5c69d1f0",
+		"module.json": "503cce348ca3e4249a968e036978242406392f295bc7eed178b8f97fc582ae4e",
+		"submodules/auto-cutscene.js": "651fe1ac3ce5e1d4b333e88478be31786a21b777c6121a08743f8d9460a1c9d7",
+		"submodules/auto-inspect.js": "9339c419dec70e857549fb5d0449654ac46899c3101fbd0ef411082530fcc431"
 	},
 	"defs": {
 		"C_END_MOVIE": 1,

@@ -1,8 +1,7 @@
-class AutoCutscene {
+class AutoInspect {
 
     constructor(parent) {
         this.parent = parent;
-        this.parent.initialize("auto-inspect");
 
         this.installHooks();
     }
@@ -12,11 +11,12 @@ class AutoCutscene {
     }
 
     installHooks() {
-        this.parent.hook('S_ANSWER_INTERACTIVE', 2, (e) => {
-            this.parent.send('C_REQUEST_USER_PAPERDOLL_INFO', 1, { name: e.name });
+        this.parent.mod.hook('S_ANSWER_INTERACTIVE', 2, (e) => {
+            this.parent.mod.send('C_REQUEST_USER_PAPERDOLL_INFO', 1, { name: e.name });
         });
+        console.log('hooked auto-inspect')
     }
 
 }
 
-module.exports = AutoCutscene;
+module.exports = AutoInspect;

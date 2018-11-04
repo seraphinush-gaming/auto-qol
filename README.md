@@ -8,11 +8,11 @@ tera-proxy compilation module for automated functions
 - `command` module
 
 ## Usage
-- __skip-cutscene : `skip`__
+- __auto-cutscene : `skip`__
   - Toggle on/off
 
 ## Config
-- __`enableSkipMovie`__
+- __`enableCutscene`__
   - Initialize skip movie function on/off
   - Default is `true`
 

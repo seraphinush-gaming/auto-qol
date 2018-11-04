@@ -1,4 +1,4 @@
-// Version 2.00 r:00
+// Version 2.00 r:01
 'use strict';
 
 class AutoQol {
@@ -16,8 +16,6 @@ class AutoQol {
     }
 
     destructor() {
-        this.mod = undefined;
-
         for(let submodule in this.submodules) {
             this.submodules[submodule].destructor();
             delete this[submodule];

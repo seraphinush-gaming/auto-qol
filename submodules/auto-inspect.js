@@ -1,9 +1,11 @@
 class AutoInspect {
 
     constructor(parent) {
+
         this.parent = parent;
 
         this.installHooks();
+
     }
 
     destructor() {

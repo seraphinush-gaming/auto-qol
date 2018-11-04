@@ -1,11 +1,13 @@
 class AutoCutscene {
 
     constructor(parent) {
+
         this.parent = parent;
         this.enable = parent.config.enableCutscene;
 
         this.installCommands();
         this.installHooks();
+
     }
 
     destructor() {

@@ -1,4 +1,4 @@
-// Version 2.00 r:01
+// Version 2.00 r:03
 'use strict';
 
 class AutoQol {

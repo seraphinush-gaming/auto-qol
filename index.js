@@ -1,4 +1,4 @@
-// Version 2.00 r:04
+// Version 2.00 r:05
 'use strict';
 
 class AutoQol {
@@ -40,7 +40,7 @@ class AutoQol {
                     this[submodule] = this.submodules[submodule];
                 }
                 catch (e) {
-                    console.log(`[auto-qol] Unable to load submodule ${submodule}: ${e}`);
+                    console.log(`\n[auto-qol] : Unable to load submodule [${submodule}] .. \n - ${e}\n`);
                 }
             }
         }

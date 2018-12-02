@@ -1,11 +1,11 @@
 {
 	"files": {
-		"README.md": "57202ffaa92d21530fa4ceeaf0764ab21066f167bbbf8879edc73395584190d9",
+		"README.md": "b66f3cd377d3aea7cb7c3d7ff144eb76dc5ac767141516e3a3d45d168cd90b3f",
 		"config.json": {
 			"overwrite": false,
 			"hash": "58bc25c10742b45bfc584ccddef6804f0d273226b05a5fa6386e98c57808ecd8"
 		},
-		"index.js": "48484f60769f6be16d296073af2b64af7b864586e19c662a2f7fce509d8962bf",
+		"index.js": "a70c3cad06631eb7d399cb1883307549c72c5893b3bd61e800a29c55786878bc",
 		"module.json": "5cd1b2699c1b9f8b7198785ec81a27883b0cb52efe795aa33515cbc59464186c",
 		"submodules/auto-cutscene.js": "fa717b7596d17e71259f34ecb15f9112e26937fce80934c7935a4d9b660bed42",
 		"submodules/auto-inspect.js": "e8d91b0230c1d1260ee7c80b0108c8a200c01855128bbd338349e899f8c3fc48"

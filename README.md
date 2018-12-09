@@ -1,11 +1,12 @@
+> [![paypal](https://img.shields.io/badge/paypal-donate-333333.svg?colorA=253B80&colorB=333333)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=B7QQJZV9L5P2J&source=url) [![paypal.me](https://img.shields.io/badge/paypal.me-donate-333333.svg?colorA=169BD7&colorB=333333)](https://www.paypal.me/seraphinush) 
+>
+> Support seraph via paypal donations, thanks in advance !
+
 # auto-qol
 tera-proxy compilation module for automated functions
 
 ## Auto-update guide
-- Create a folder called `auto-qol` in `tera-proxy/bin/node_modules` and download >> [`module.json`](https://raw.githubusercontent.com/seraphinush-gaming/auto-qol/master/module.json) << (right-click save link as...) into the folder
-
-## Dependency
-- `command` module
+- Create a folder called `auto-qol` in `tera-proxy/mods` and download >> [`module.json`](https://raw.githubusercontent.com/seraphinush-gaming/auto-qol/master/module.json) << (right-click save this link as...) into the folder
 
 ## Usage
 - __auto-cutscene : `skip`__
@@ -21,11 +22,12 @@ tera-proxy compilation module for automated functions
 - Compiled modules :
   - `auto-cutscene` (mod. by [baldera-mods](https://github.com/baldera-mods), branch [seraphinush-gaming](https://github.com/ylennia-archives/auto-cutscene))
   - `auto-inspect` (branch [seraphinush-gaming](https://github.com/ylennia-archives/auto-inspect))
-- **Support seraph via paypal donations, thanks in advance : [paypal](https://www.paypal.me/seraphinush)**
 
 ## Changelog
 <details>
 
+    2.01
+    - Updated for caali-proxy-nextgen
     2.00
     - Refactored into submodules
     1.00

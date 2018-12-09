@@ -18,7 +18,6 @@ class AutoQol {
         } else {
             fs.mkdirSync(path.join(__dirname, 'submodules'));
         }
-
         for (let i = 0, n = list.length; i < n; i++) {
             this.initialize(list[i]);
         }

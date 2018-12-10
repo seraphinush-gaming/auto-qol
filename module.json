@@ -1,5 +1,8 @@
 {
     "disableAutoUpdate": false,
-    "options": { "niceName": "auto-qol" },
+    "name": "auto-qol",
+    "author": "seraphinush",
+    "description": "tera-proxy compilation module for automated functions",
+    "version": "2.01.00",
     "servers": ["https://raw.githubusercontent.com/seraphinush-gaming/auto-qol/master/"]
 }

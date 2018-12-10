@@ -1,5 +1,7 @@
-// Version 2.00 r:05
 'use strict';
+
+const fs = require('fs');
+const path = require('path');
 
 class AutoQol {
 
@@ -10,8 +12,15 @@ class AutoQol {
         this.config = require('./config.json');
         this.submodules = {};
 
-        if (this.config.autoCutscene) { this.initialize("auto-cutscene"); }
-        if (this.config.autoInspect) { this.initialize("auto-inspect"); }
+        let list = [];
+        if (fs.existsSync(path.join(__dirname, 'submodules'))) {
+            list = fs.readdirSync(path.join(__dirname, 'submodules'));
+        } else {
+            fs.mkdirSync(path.join(__dirname, 'submodules'));
+        }
+        for (let i = 0, n = list.length; i < n; i++) {
+            this.initialize(list[i]);
+        }
 
     }
 

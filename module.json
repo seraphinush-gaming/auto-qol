@@ -3,7 +3,7 @@
     "name": "auto-qol",
     "author": "seraphinush",
     "description": "tera-proxy compilation module for automated functions",
-    "version": "2.01.01",
+    "version": "2.01.02",
     "options": {
         "reloadable": true
     },

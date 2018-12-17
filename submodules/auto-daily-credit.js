@@ -4,9 +4,13 @@ class AutoDailyCredit {
 
         this.parent = parent;
 
-        this.parent.mod.game.on('enter_game', () =>
-            this.parent.mod.send('C_REQUEST_RECV_DAILY_TOKEN', 1, {})
-        );
+        this.enable = true;
+
+        this.parent.mod.game.on('enter_game', () => {
+            let _ = this.parent.mod.trySend('C_REQUEST_RECV_DAILY_TOKEN', 1, {});
+            if (_)
+                this.parent.cmd.message('Unmapped protocol &lt;C_REQUEST_RECV_DAILY_TOKEN&gt;.');
+        });
 
     }
 

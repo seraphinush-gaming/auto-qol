@@ -1,17 +1,19 @@
 {
 	"files": {
-		"README.md": "cfc515c354d88703247e7a59a89df89d4747afd5bb19ab50d377b75ce11e5f32",
+		"README.md": "8156080a1c356264fea80d604fd854034573464ddb9becc7879a4e2d5bd929e1",
 		"config.json": {
 			"overwrite": false,
 			"hash": "9c7541a93093c14380302acaa1a8945c952e1e59f91e679601ad9b22439418ea"
 		},
 		"index.js": "8213ff2aa907754fb1ef0a4fde31b02cd8ee629cf8f41cad2dceee936197c9b4",
-		"module.json": "2a7ada2fac21fa9e14098309737eb538c72d2c68ccf2fb17360fa7ed25af5474",
-		"submodules/auto-cutscene.js": "fa717b7596d17e71259f34ecb15f9112e26937fce80934c7935a4d9b660bed42",
+		"module.json": "0faa68a46a91bdcc1ff3cd02b40c0c9f9c0d35f4922b18e1fe4618f4730af0ad",
+		"submodules/auto-cutscene.js": "1964efe497f045559145309373f25510c77d5b5a309f17e35b6a14a70ebe72c5",
+		"submodules/auto-daily-credit.js": "732f8ebcd900d99677a7b206df2b7b538e2e4a328539bdee01d698fd640e8318",
 		"submodules/auto-inspect.js": "e8d91b0230c1d1260ee7c80b0108c8a200c01855128bbd338349e899f8c3fc48"
 	},
 	"defs": {
 		"C_END_MOVIE": 1,
+		"C_REQUEST_RECV_DAILY_TOKEN": 1,
 		"C_REQUEST_USER_PAPERDOLL_INFO": 1,
 		"S_ANSWER_INTERACTIVE": 2,
 		"S_PLAY_MOVIE": 1

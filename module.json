@@ -1,13 +1,13 @@
 {
-    "disableAutoUpdate": false,
-    "name": "auto-qol",
     "author": "seraphinush",
     "description": "tera-proxy compilation module for automated functions",
-    "version": "2.01.02",
+    "disableAutoUpdate": false,
+    "donationUrl": "https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=B7QQJZV9L5P2J&source=url",
+    "name": "auto-qol",
     "options": {
-        "reloadable": true
+        "reloadable": false
     },
     "servers": ["https://raw.githubusercontent.com/seraphinush-gaming/auto-qol/master/"],
     "supportUrl": "https://github.com/seraphinush-gaming/auto-qol/blob/master/README.md",
-    "donationUrl": "https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=B7QQJZV9L5P2J&source=url"
+    "version": "2.02.00"
 }

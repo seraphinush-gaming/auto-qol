@@ -20,11 +20,14 @@ Support seraph via paypal donations, thanks in advance !
 - Code schematic based on [`tera-game-state`](https://github.com/caali-hackerman/tera-game-state)
 - Compiled modules :
   - `auto-cutscene` (mod. by [baldera-mods](https://github.com/baldera-mods), branch [seraphinush-gaming](https://github.com/ylennia-archives/auto-cutscene))
+  - `auto-daily-reward-credits` (mod. by [teralove](https://github.com/teralove))
   - `auto-inspect` (branch [seraphinush-gaming](https://github.com/ylennia-archives/auto-inspect))
 
 ## Changelog
 <details>
 
+    2.02
+    - Added `auto-daily-credit` submodule
     2.01
     - Updated for caali-proxy-nextgen
     2.00

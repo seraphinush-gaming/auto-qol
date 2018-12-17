@@ -18,8 +18,10 @@ class AutoCutscene {
     }
 
     destructor() {
-        this.enable = undefined;
+        this.parent.cmd.remove('skip');
+
         this.parent = undefined;
+        this.enable = undefined;
     }
 
     installHooks() {

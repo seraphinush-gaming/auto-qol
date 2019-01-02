@@ -6,9 +6,9 @@
 			"hash": "9c7541a93093c14380302acaa1a8945c952e1e59f91e679601ad9b22439418ea"
 		},
 		"index.js": "17e899b7efccd594eaeb550b9e2a2329a679ac060ef54bb81756c40b5173cdb8",
-		"module.json": "109a2f28471cc3ef8acb328071b4d1bf639789882fecef3e75118d7b2d6db7cf",
+		"module.json": "11aa7d35a5163ac0b22df2101afeb19aa07b11bacb838691cc59296b2b3bef7d",
 		"submodules/auto-cutscene.js": "1964efe497f045559145309373f25510c77d5b5a309f17e35b6a14a70ebe72c5",
-		"submodules/auto-daily-credit.js": "596884791fc2df965d128a6437ebd7eddc297d037ac7ec5862a4ae1a7d5d8239",
+		"submodules/auto-daily-credit.js": "8d6798013621fed92a75c4611630ffbdafdcd8ee02fcd3bc1c7ab00e54e36f98",
 		"submodules/auto-inspect.js": "e8d91b0230c1d1260ee7c80b0108c8a200c01855128bbd338349e899f8c3fc48"
 	},
 	"defs": {

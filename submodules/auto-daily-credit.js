@@ -9,7 +9,7 @@ class AutoDailyCredit {
         this.parent.mod.game.on('enter_game', () => {
             let _ = this.parent.mod.trySend('C_REQUEST_RECV_DAILY_TOKEN', 1, {});
             if (!_)
-                this.parent.log('Unmapped protocol &lt;C_REQUEST_RECV_DAILY_TOKEN&gt;.');
+                console.log('Unmapped protocol &lt;C_REQUEST_RECV_DAILY_TOKEN&gt;.');
         });
 
     }

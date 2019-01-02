@@ -25,7 +25,7 @@ class AutoQol {
     }
 
     destructor() {
-        for(let submodule in this.submodules) {
+        for (let submodule in this.submodules) {
             this.submodules[submodule].destructor();
             delete this[submodule];
         }
@@ -58,5 +58,5 @@ class AutoQol {
 }
 
 module.exports = function AutoQolLoader(mod) {
-    return new AutoQol(mod)
+    return new AutoQol(mod);
 }

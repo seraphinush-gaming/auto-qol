@@ -5,8 +5,8 @@
 			"overwrite": false,
 			"hash": "9c7541a93093c14380302acaa1a8945c952e1e59f91e679601ad9b22439418ea"
 		},
-		"index.js": "8213ff2aa907754fb1ef0a4fde31b02cd8ee629cf8f41cad2dceee936197c9b4",
-		"module.json": "ddd0a7c109236bd932064a681c101dfc035191f6b00dfb7a800e16d605d04ea2",
+		"index.js": "17e899b7efccd594eaeb550b9e2a2329a679ac060ef54bb81756c40b5173cdb8",
+		"module.json": "109a2f28471cc3ef8acb328071b4d1bf639789882fecef3e75118d7b2d6db7cf",
 		"submodules/auto-cutscene.js": "1964efe497f045559145309373f25510c77d5b5a309f17e35b6a14a70ebe72c5",
 		"submodules/auto-daily-credit.js": "596884791fc2df965d128a6437ebd7eddc297d037ac7ec5862a4ae1a7d5d8239",
 		"submodules/auto-inspect.js": "e8d91b0230c1d1260ee7c80b0108c8a200c01855128bbd338349e899f8c3fc48"

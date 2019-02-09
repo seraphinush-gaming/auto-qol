@@ -5,7 +5,7 @@ Support seraph via paypal donations, thanks in advance !
 ```
 
 ## Auto-update guide
-- Create a folder called `auto-qol` in `tera-proxy/mods` and download >> [`module.json`](https://raw.githubusercontent.com/seraphinush-gaming/auto-qol/master/module.json) << (right-click this link and save as..) into the folder
+- Create a folder called `auto-qol` in `tera-proxy/mods` and download >> [`module.json`](https://raw.githubusercontent.com/seraphinush-gaming/auto-qol/master/module.json) << (right-click this link and save link as..) into the folder
 
 ## Usage
 - __auto-cutscene : `skip`__

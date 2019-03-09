@@ -8,7 +8,7 @@ class AutoQol {
     constructor(mod) {
 
         this.mod = mod;
-        this.cmd = mod.command || mod.require.command;
+        this.cmd = mod.command;
         this.config = require('./config.json');
         this.submodules = {};
 

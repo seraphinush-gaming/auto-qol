@@ -1,22 +1,24 @@
 class AutoInspect {
 
-    constructor(parent) {
+  constructor(parent) {
 
-        this.parent = parent;
+    this.parent = parent;
 
-        this.installHooks();
+    this.installHooks();
 
-    }
+  }
 
-    destructor() {
-        this.parent = undefined;
-    }
+  destructor() {
+    this.parent.mod.unhook('S_ANSWER_INTERACTIVE');
 
-    installHooks() {
-        this.parent.mod.hook('S_ANSWER_INTERACTIVE', 2, (e) => {
-            this.parent.mod.send('C_REQUEST_USER_PAPERDOLL_INFO', 1, { name: e.name });
-        });
-    }
+    this.parent = undefined;
+  }
+
+  installHooks() {
+    this.parent.mod.hook('S_ANSWER_INTERACTIVE', 2, (e) => {
+      this.parent.mod.send('C_REQUEST_USER_PAPERDOLL_INFO', 1, { name: e.name });
+    });
+  }
 
 }
 

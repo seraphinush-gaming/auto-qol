@@ -1,39 +1,41 @@
 class AutoCutscene {
 
-    constructor(parent) {
+  constructor(parent) {
 
-        this.parent = parent;
+    this.parent = parent;
 
-        this.enable = parent.config.enableCutscene;
+    this.enable = parent.config.enableCutscene;
 
-        // command
-        this.parent.cmd.add('skip', {
-            '$none': () => {
-                this.enable = !this.enable;
-                this.send(`auto-cutscene ${this.enable ? 'en' : 'dis'}abled`);
-            }
-        });
+    // command
+    this.parent.cmd.add('skip', {
+      '$none': () => {
+        this.enable = !this.enable;
+        this.send(`auto-cutscene ${this.enable ? 'en' : 'dis'}abled`);
+      }
+    });
 
-        this.installHooks();
+    this.installHooks();
 
-    }
+  }
 
-    destructor() {
-        this.parent.cmd.remove('skip');
-        this.parent = undefined;
-        this.enable = undefined;
-    }
+  destructor() {
+    this.parent.mod.unhook('S_PLAY_MOVIE');
 
-    installHooks() {
-        this.parent.mod.hook('S_PLAY_MOVIE', 1, (e) => {
-            if (!this.enable)
-                return;
-            this.parent.mod.send('C_END_MOVIE', 1, Object.assign({ unk: 1 }, e));
-            return false;
-        });
-    }
+    this.parent.cmd.remove('skip');
+    this.parent = undefined;
+    this.enable = undefined;
+  }
 
-    send(msg) { this.parent.cmd.message(`: ` + msg); }
+  installHooks() {
+    this.parent.mod.hook('S_PLAY_MOVIE', 1, (e) => {
+      if (!this.enable)
+        return;
+      this.parent.mod.send('C_END_MOVIE', 1, Object.assign({ unk: 1 }, e));
+      return false;
+    });
+  }
+
+  send(msg) { this.parent.cmd.message(`: ` + msg); }
 
 }
 

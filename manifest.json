@@ -1,12 +1,12 @@
 {
 	"files": {
-		"README.md": "fbf28367ebb1fddb5e9309045c0f2598a2407295cdd6923921fa6ee2f329935f",
+		"README.md": "3f4e8e05ebfd091355e7ae1ebb11dbcc16f2381972da76baf3e125f35626e6c0",
 		"config.json": {
 			"overwrite": false,
 			"hash": "059c6cfce6e09e9acc0851d6d9eeb5f4027eb8f63c0e3967fb2e3c5ee090fec3"
 		},
 		"index.js": "29ba0f800112a33280e4be502b8761c34b00bf4416ebcd40b4e1a7f90fa43ad1",
-		"module.json": "8d0a1992cd1a7033f3d5cf86b3d5debd68f45c02be26a6fdf0a5795e32c69b72",
+		"module.json": "ce43aae65a13362201b470a59d6e6ca85cf01c3a09b2218d6e4e3f6389f897f2",
 		"submodules/auto-cutscene.js": "8da423d4d7ff8239f6a0ea55f44e44a014cdbef64860a8919add06c9ae14ba27",
 		"submodules/auto-daily-credit.js": "94dc644ef031ce7ebc70f917e2e01eee69b8c111f605bcb6e2c96c7eb3dd5c76",
 		"submodules/auto-inspect.js": "519a88ffa27588e218cddc083af0102cfdc3daea4c1d6d3e80eacdf18d0fda6f"

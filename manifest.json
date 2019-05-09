@@ -1,22 +1,22 @@
 {
 	"files": {
-		"README.md": "3f4e8e05ebfd091355e7ae1ebb11dbcc16f2381972da76baf3e125f35626e6c0",
+		"README.md": "7a5159311fdc300c2814327e0817780e440205ebc31529044571a3d5577fc58c",
 		"config.json": {
 			"overwrite": false,
 			"hash": "059c6cfce6e09e9acc0851d6d9eeb5f4027eb8f63c0e3967fb2e3c5ee090fec3"
 		},
-		"index.js": "29ba0f800112a33280e4be502b8761c34b00bf4416ebcd40b4e1a7f90fa43ad1",
-		"module.json": "ce43aae65a13362201b470a59d6e6ca85cf01c3a09b2218d6e4e3f6389f897f2",
-		"submodules/auto-cutscene.js": "8da423d4d7ff8239f6a0ea55f44e44a014cdbef64860a8919add06c9ae14ba27",
-		"submodules/auto-daily-credit.js": "94dc644ef031ce7ebc70f917e2e01eee69b8c111f605bcb6e2c96c7eb3dd5c76",
-		"submodules/auto-inspect.js": "519a88ffa27588e218cddc083af0102cfdc3daea4c1d6d3e80eacdf18d0fda6f"
+		"index.js": "f80c586283c16aef3f08eef5d3b8de2538f9d3f2c603e01bc2a4536c0ec46555",
+		"module.json": "8ff7483bfd4270a670bba0b6a079db97c3eec1e044971b6a7bfa940f40d7f32b",
+		"submodules/auto-cutscene.js": "e381247aa5ac5b5c185d6b3309afb63e3656392e3457d95356a7f4928e415a69",
+		"submodules/auto-daily-credit.js": "b559502ee312e828f2033c50d8724c12c1a1542777708e51eafb7914f0114e20",
+		"submodules/auto-inspect.js": "181297e440039275f6e4b549d270b27d9396ef72680406eb2af1d845dccbe2a6"
 	},
 	"defs": {
 		"C_END_MOVIE": 1,
 		"C_REQUEST_RECV_DAILY_TOKEN": 1,
 		"C_REQUEST_USER_PAPERDOLL_INFO": 1,
 		"S_ANSWER_INTERACTIVE": 2,
-		"S_LOGIN": "raw",
+		"S_LOGIN": [12,13,"raw"],
 		"S_PLAY_MOVIE": 1
 	}
 }

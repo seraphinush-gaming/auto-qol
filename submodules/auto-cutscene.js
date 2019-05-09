@@ -14,25 +14,20 @@ class AutoCutscene {
       }
     });
 
-    this.installHooks();
+    this.parent.hook('S_PLAY_MOVIE', 1, (e) => {
+      if (this.enable) {
+        this.parent.mod.send('C_END_MOVIE', 1, Object.assign({ unk: 1 }, e));
+        return false;
+      }
+    });
 
   }
 
   destructor() {
-    this.parent.mod.unhook('S_PLAY_MOVIE');
-
     this.parent.cmd.remove('skip');
+
     this.parent = undefined;
     this.enable = undefined;
-  }
-
-  installHooks() {
-    this.parent.mod.hook('S_PLAY_MOVIE', 1, (e) => {
-      if (!this.enable)
-        return;
-      this.parent.mod.send('C_END_MOVIE', 1, Object.assign({ unk: 1 }, e));
-      return false;
-    });
   }
 
   send(msg) { this.parent.cmd.message(`: ` + msg); }

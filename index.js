@@ -10,7 +10,10 @@ class AutoQol {
     this.mod = mod;
     this.cmd = mod.command;
     this.config = require('./config.json');
+    this.hooks = [];
     this.submodules = {};
+
+    this.myGameId = BigInt(0);
 
     let list = [];
     if (fs.existsSync(path.join(__dirname, 'submodules'))) {
@@ -22,6 +25,8 @@ class AutoQol {
       this.initialize(list[i]);
     }
 
+    this.load();
+
   }
 
   destructor() {
@@ -29,6 +34,8 @@ class AutoQol {
       this.submodules[submodule].destructor();
       delete this[submodule];
     }
+
+    this.unload();
 
     this.submodules = undefined;
     this.config = undefined;
@@ -56,6 +63,35 @@ class AutoQol {
       }
     }
   }
+
+  // code
+  hook() {
+    this.hooks.push(this.mod.hook(...arguments));
+  }
+
+  load() {
+    this.hook('S_LOGIN', this.mod.majorPatchVersion >= 81 ? 13 : 12, { order: - 1000 }, (e) => {
+      this.myGameId = e.gameId;
+    });
+  }
+
+  unload() {
+    if (this.hooks.length) {
+      for (let h of this.hooks)
+        this.mod.unhook(h);
+      this.hooks = [];
+    }
+  }
+
+  // reload
+  saveState() {
+    let state = this.myGameId;
+    return state;
+  }
+
+  loadState(state) {
+    this.myGameId = state;
+  }  
 
 }
 

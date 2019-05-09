@@ -32,6 +32,8 @@ Support seraph via paypal donations, thanks in advance !
 ## Changelog
 <details>
 
+    2.04
+    - Added hot-reload support
     2.03
     - Removed `tera-game-state` usage
     2.02

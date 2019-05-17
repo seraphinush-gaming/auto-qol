@@ -54,11 +54,13 @@ class AutoQol {
           let req = require(`./submodules/${submodule}`);
           this.submodules[submodule] = new req(this);
           this[submodule] = this.submodules[submodule];
+
+          console.log(`.. Loaded submodule [${submodule}]`);
         }
         catch (e) {
           delete this[submodule];
 
-          console.log(`\n[auto-qol] : Unable to load submodule [${submodule}] .. \n - ${e}\n`);
+          console.log(`[auto-qol] : Unable to load submodule [${submodule}] .. \n - ${e}\n`);
         }
       }
     }

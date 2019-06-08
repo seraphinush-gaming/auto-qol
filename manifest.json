@@ -2,10 +2,10 @@
 	"files": {
 		"README.md": "3614c211bb8e697c93dfdb15ced709fa3e5a34351d57988971821ef28c2f5de4",
 		"index.js": "a982863cb92303ee5d6e520482d85e34d641acaae325c9d672354dbd74fffb22",
-		"module.json": "5f56b44cbcb6791cdd9d0f18610ae13c1c4206d167a869b4c9375f5be383dd6d",
+		"module.json": "9aa82813f72f6f1b4af1f4212be0333784db8b430bc23c4d66877fb5c27c96c9",
 		"settings.js": "bc1b5428233e9af92a40bc1caa80de6f6839a16184fc9d77ee33b2a23eb554e9",
 		"submodules/auto-cutscene.js": "ca9e945b6a1f1b486082fcc2ca3146162c4b3aaac651c6c77e44c8c0fb1b7705",
-		"submodules/auto-daily-credit.js": "1e1103a74027d1001abf823995bd12e15a5b01ce50e8c367ea17a22895a39929",
+		"submodules/auto-daily-credit.js": "b559502ee312e828f2033c50d8724c12c1a1542777708e51eafb7914f0114e20",
 		"submodules/auto-inspect.js": "f99dfea4509cef057a59839aff141b3bca4fe143e427da3d38420adaad67a83a"
 	},
 	"defs": {

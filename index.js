@@ -9,7 +9,7 @@ class AutoQol {
 
     this.mod = mod;
     this.cmd = mod.command;
-    this.config = require('./config.json');
+    this.settings = mod.settings;
     this.hooks = [];
     this.submodules = {};
 
@@ -38,7 +38,7 @@ class AutoQol {
     this.unload();
 
     this.submodules = undefined;
-    this.config = undefined;
+    this.settings = undefined;
     this.cmd = undefined;
     this.mod = undefined;
   }

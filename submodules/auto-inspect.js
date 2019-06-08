@@ -5,7 +5,16 @@ class AutoInspect {
     this.parent = parent;
 
     this.parent.hook('S_ANSWER_INTERACTIVE', 2, {}, (e) => {
-      this.parent.mod.send('C_REQUEST_USER_PAPERDOLL_INFO', 1, { name: e.name });
+      if (this.parent.mod.majorPatchVersion >= 85) {
+        this.parent.mod.send('C_REQUEST_USER_PAPERDOLL_INFO', 2, {
+          unk: false,
+          name: e.name
+        });
+      } else {
+        this.parent.mod.send('C_REQUEST_USER_PAPERDOLL_INFO', 1, {
+          name: e.name
+        });
+      }
     });
 
   }

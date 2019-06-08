@@ -17,11 +17,6 @@ Support seraph via paypal donations, thanks in advance !
 - __auto-cutscene : `skip`__
   - Toggle on/off
 
-## Config
-- __`enableCutscene`__
-  - Initialize skip movie function on/off
-  - Default is `true`
-
 ## Info
 - Code schematic based on [`tera-game-state`](https://github.com/caali-hackerman/tera-game-state)
 - Compiled modules :
@@ -32,6 +27,8 @@ Support seraph via paypal donations, thanks in advance !
 ## Changelog
 <details>
 
+    2.05
+    - Added settings-migrator support
     2.04
     - Added hot-reload support
     2.03

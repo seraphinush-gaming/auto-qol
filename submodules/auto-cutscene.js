@@ -4,18 +4,16 @@ class AutoCutscene {
 
     this.parent = parent;
 
-    this.enable = parent.config.enableCutscene;
-
     // command
     this.parent.cmd.add('skip', {
       '$none': () => {
-        this.enable = !this.enable;
-        this.send(`auto-cutscene ${this.enable ? 'en' : 'dis'}abled`);
+        this.parent.settings.enableCutscene = !this.parent.settings.enableCutscene;
+        this.send(`auto-cutscene ${this.parent.settings.enableCutscene ? 'en' : 'dis'}abled`);
       }
     });
 
     this.parent.hook('S_PLAY_MOVIE', 1, (e) => {
-      if (this.enable) {
+      if (this.parent.settings.enableCutscene) {
         this.parent.mod.send('C_END_MOVIE', 1, Object.assign({ unk: 1 }, e));
         return false;
       }
@@ -27,7 +25,6 @@ class AutoCutscene {
     this.parent.cmd.remove('skip');
 
     this.parent = undefined;
-    this.enable = undefined;
   }
 
   send(msg) { this.parent.cmd.message(`: ` + msg); }

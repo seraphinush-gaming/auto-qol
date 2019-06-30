@@ -7,7 +7,7 @@ class AutoInspect {
     this.parent.hook('S_ANSWER_INTERACTIVE', 2, {}, (e) => {
       if (this.parent.mod.majorPatchVersion >= 85) {
         this.parent.mod.send('C_REQUEST_USER_PAPERDOLL_INFO', 2, {
-          unk: false,
+          unk: true,
           name: e.name
         });
       } else {

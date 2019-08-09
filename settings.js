@@ -1,7 +1,9 @@
 'use strict';
 
 const DefaultSettings = {
-  "enableCutscene": true
+  "enableCutscene": true,
+  "enableDaily": true,
+  "enableInspect": true
 };
 
 function MigrateSettings(from_ver, to_ver, settings) {

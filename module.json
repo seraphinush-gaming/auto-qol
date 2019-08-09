@@ -6,7 +6,7 @@
   "name": "auto-qol",
   "options": {
     "reloadable": true,
-    "settingsVersion": 1,
+    "settingsVersion": 2,
     "settingsFile": "config.json",
     "settingsMigrator": "settings.js"
   },
@@ -14,5 +14,5 @@
     "https://raw.githubusercontent.com/seraphinush-gaming/auto-qol/master/"
   ],
   "supportUrl": "https://github.com/seraphinush-gaming/auto-qol/blob/master/README.md",
-  "version": "2.05.02"
+  "version": "2.06.00"
 }

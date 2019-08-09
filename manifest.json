@@ -1,19 +1,19 @@
 {
 	"files": {
-		"README.md": "3614c211bb8e697c93dfdb15ced709fa3e5a34351d57988971821ef28c2f5de4",
-		"index.js": "358140c492a15418c3b0468f17b0330cb1b2fef957628ea8e92d5628ec4de020",
-		"module.json": "14a4e40e8e5cf3c53124aacffbb13efbd0d6f497c4ba45513160e13d3873624c",
-		"settings.js": "bc1b5428233e9af92a40bc1caa80de6f6839a16184fc9d77ee33b2a23eb554e9",
-		"submodules/auto-cutscene.js": "ca9e945b6a1f1b486082fcc2ca3146162c4b3aaac651c6c77e44c8c0fb1b7705",
-		"submodules/auto-daily-credit.js": "447f5e19c46df975faa46f8d237e29933e0bd6fa8842854e97e8d54da6568b68",
-		"submodules/auto-inspect.js": "88cec0cf4f46ca79d8b05eb933ff692b229639a89d2e76d4f2a932c949891143"
+		"README.md": "7d7502c89e560239be908ce5da3186390f69b4412ce3209fa0ee84a22ea4f8f3",
+		"index.js": "34da48ec5b97397f19b302bf0f39017e932a7487486a4b499c0b9ff005581774",
+		"module.json": "0ab18bd9c83c153d082c0f9cecb374d4f5c214ccb8d06a54db6571bf8187020d",
+		"settings.js": "0f07ed0987ff2f4b03954e37b344d2a0bf29e8be58bd89ecc72cd34831e02efd",
+		"submodules/auto-cutscene.js": "a7fb03fc8aaa99b89e469264bbdf737067e0332841cfab881474f684f135e35f",
+		"submodules/auto-daily-credit.js": "b2423f227d835fd5dfb1f17c9aa73cfce34ce298f4a6cfe6518f56ecf90ea4e2",
+		"submodules/auto-inspect.js": "d99c59f11c7d4283ae59d06c0c613e92020d493f525211cca26a2f9c8de77b13"
 	},
 	"defs": {
 		"C_END_MOVIE": 1,
 		"C_REQUEST_RECV_DAILY_TOKEN": 1,
 		"C_REQUEST_USER_PAPERDOLL_INFO": [1,2],
 		"S_ANSWER_INTERACTIVE": 2,
-		"S_LOGIN": [12,13,"raw"],
+		"S_LOGIN": "raw",
 		"S_PLAY_MOVIE": 1
 	}
 }

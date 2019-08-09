@@ -14,7 +14,13 @@ Support seraph via paypal donations, thanks in advance !
 - Create a folder called `auto-qol` in `tera-toolbox/mods` and download >> [`module.json`](https://raw.githubusercontent.com/seraphinush-gaming/auto-qol/master/module.json) << (right-click this link and save link as..) into the folder
 
 ## Usage
+- __`qol`__
+### Arguments
 - __auto-cutscene : `skip`__
+  - Toggle on/off
+- __auto-daily-credit : `daily`__
+  - Toggle on/off
+- __auto-inspect  : `inspect`__
   - Toggle on/off
 
 ## Info
@@ -27,6 +33,9 @@ Support seraph via paypal donations, thanks in advance !
 ## Changelog
 <details>
 
+    2.06
+    - Reinstated `tera-game-state`
+    - Updated commands
     2.05
     - Added settings-migrator support
     2.04

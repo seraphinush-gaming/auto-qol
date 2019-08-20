@@ -1,11 +1,11 @@
 {
 	"files": {
 		"README.md": "7d7502c89e560239be908ce5da3186390f69b4412ce3209fa0ee84a22ea4f8f3",
-		"index.js": "34da48ec5b97397f19b302bf0f39017e932a7487486a4b499c0b9ff005581774",
-		"module.json": "0ab18bd9c83c153d082c0f9cecb374d4f5c214ccb8d06a54db6571bf8187020d",
+		"index.js": "d07260e795d41e630a50b044fb02fed1da8b4280812caf2a482b4d8982b4dc6f",
+		"module.json": "c0381a459d62d2fb4bd9542ddc0e116979e1ab94d5ca2bef19c626b68ba5e5ec",
 		"settings.js": "0f07ed0987ff2f4b03954e37b344d2a0bf29e8be58bd89ecc72cd34831e02efd",
 		"submodules/auto-cutscene.js": "a7fb03fc8aaa99b89e469264bbdf737067e0332841cfab881474f684f135e35f",
-		"submodules/auto-daily-credit.js": "b2423f227d835fd5dfb1f17c9aa73cfce34ce298f4a6cfe6518f56ecf90ea4e2",
+		"submodules/auto-daily-credit.js": "865a16b980486f888d8f8446dd85cdd9c5528baccb2302053584830c3e6cebfa",
 		"submodules/auto-inspect.js": "d99c59f11c7d4283ae59d06c0c613e92020d493f525211cca26a2f9c8de77b13"
 	},
 	"defs": {

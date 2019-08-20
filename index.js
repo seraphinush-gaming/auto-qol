@@ -10,8 +10,8 @@ class AutoQol {
     this.mod = mod;
     this.cmd = mod.command;
     this.game = mod.game;
-    this.hooks = [];
     this.settings = mod.settings;
+    this.hooks = [];
     this.submodules = {};
 
     this.myGameId = BigInt(0);
@@ -29,13 +29,13 @@ class AutoQol {
 
     // command
     this.cmd.add('qol', {
-      'skip': () => {
-        this.settings.enableCutscene = !this.settings.enableCutscene;
-        this.send(`auto-cutscene ${this.settings.enableCutscene ? 'en' : 'dis'}abled`);
-      },
       'daily': () => {
         this.settings.enableDaily = !this.settings.enableDaily;
         this.send(`auto-daily ${this.settings.enableDaily ? 'en' : 'dis'}abled`);
+      },
+      'skip': () => {
+        this.settings.enableCutscene = !this.settings.enableCutscene;
+        this.send(`auto-cutscene ${this.settings.enableCutscene ? 'en' : 'dis'}abled`);
       },
       'inspect': () => {
         this.settings.enableInspect = !this.settings.enableInspect;
@@ -47,31 +47,29 @@ class AutoQol {
     });
 
     // game state
-    this.mod.game.on('enter_game', () => {
-      this.myGameId = this.mod.game.me.gameId;
-      this.myName = this.mod.game.me.name;
+    this.game.on('enter_game', () => {
+      this.myGameId = this.game.me.gameId;
+      this.myName = this.game.me.name;
     });
 
   }
 
   destructor() {
     this.mod.saveSettings();
+    this.cmd.remove('qol');
+    this.unload();
     
     for (let submodule in this.submodules) {
       this.submodules[submodule].destructor();
       delete this[submodule];
     }
 
-    this.cmd.remove('qol');
-
-    this.unload();
-
     this.myName = undefined;
     this.myGameId = undefined;
 
     this.submodules = undefined;
-    this.settings = undefined;
     this.hooks = undefined;
+    this.settings = undefined;
     this.game = undefined;
     this.cmd = undefined;
     this.mod = undefined;
@@ -105,13 +103,6 @@ class AutoQol {
     this.hooks.push(this.mod.hook(...arguments));
   }
 
-  /* load() {
-    this.hook('S_LOGIN', this.mod.majorPatchVersion >= 81 ? 13 : 12, { order: - 1000 }, (e) => {
-      this.myGameId = e.gameId;
-      this.myName = e.name;
-    });
-  } */
-
   unload() {
     if (this.hooks.length) {
       for (let h of this.hooks)
@@ -133,9 +124,5 @@ class AutoQol {
   }  
 
 }
-
-/* module.exports = function AutoQolLoader(mod) {
-  return new AutoQol(mod);
-} */
 
 module.exports = AutoQol;

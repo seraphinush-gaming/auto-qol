@@ -4,7 +4,7 @@ class AutoDailyCredit {
 
     this.parent = parent;
 
-    this.parent.hook('S_LOGIN', 'raw', () => {
+    this.parent.mod.hookOnce('S_LOGIN', 'raw', () => {
       if (this.parent.settings.enableDaily) {
         let _ = this.parent.mod.trySend('C_REQUEST_RECV_DAILY_TOKEN', 1, {});
         if (!_) {

@@ -33,13 +33,13 @@ class AutoQol {
         this.settings.enableDaily = !this.settings.enableDaily;
         this.send(`auto-daily ${this.settings.enableDaily ? 'en' : 'dis'}abled`);
       },
-      'skip': () => {
-        this.settings.enableCutscene = !this.settings.enableCutscene;
-        this.send(`auto-cutscene ${this.settings.enableCutscene ? 'en' : 'dis'}abled`);
-      },
       'inspect': () => {
         this.settings.enableInspect = !this.settings.enableInspect;
         this.send(`auto-inspect ${this.settings.enableInspect ? 'en' : 'dis'}abled`);
+      },
+      'skip': () => {
+        this.settings.enableCutscene = !this.settings.enableCutscene;
+        this.send(`auto-cutscene ${this.settings.enableCutscene ? 'en' : 'dis'}abled`);
       },
       '$default': () => {
         this.send(`Invalid argument. uasge : qol [daily|inspect|skip]`);

@@ -55,9 +55,8 @@ class AutoQol {
   }
 
   destructor() {
-    this.mod.saveSettings();
-    this.cmd.remove('qol');
     this.unload();
+    this.cmd.remove('qol');
     
     for (let submodule in this.submodules) {
       this.submodules[submodule].destructor();
@@ -115,8 +114,7 @@ class AutoQol {
 
   // reload
   saveState() {
-    let state = this.myGameId;
-    return state;
+    return this.myGameId;
   }
 
   loadState(state) {

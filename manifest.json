@@ -1,12 +1,12 @@
 {
 	"files": {
 		"README.md": "7d7502c89e560239be908ce5da3186390f69b4412ce3209fa0ee84a22ea4f8f3",
-		"index.js": "d07260e795d41e630a50b044fb02fed1da8b4280812caf2a482b4d8982b4dc6f",
-		"module.json": "28b2b1c4a77429b529592d72dfc4080c837e20991a64bf56d565bfbfb5365063",
+		"index.js": "76fbce62d970039bcbb98cfdb728c69b43b56f0a45487b17abd53c72ed116848",
+		"module.json": "7f2aea60fb1f274e62137b8f9a54acf7752094181a814b036f563d2e30b32532",
 		"settings.js": "0f07ed0987ff2f4b03954e37b344d2a0bf29e8be58bd89ecc72cd34831e02efd",
 		"submodules/auto-cutscene.js": "a7fb03fc8aaa99b89e469264bbdf737067e0332841cfab881474f684f135e35f",
 		"submodules/auto-daily-credit.js": "865a16b980486f888d8f8446dd85cdd9c5528baccb2302053584830c3e6cebfa",
-		"submodules/auto-inspect.js": "47c9f440f9c998e9401a4fa0da2268765e2803ef81c70f926336dde99b395297"
+		"submodules/auto-inspect.js": "398cc60995a4e358791452c4e35d32d32385725276b3ade0f64b428bc0ba1e29"
 	},
 	"defs": {
 		"C_END_MOVIE": 1,

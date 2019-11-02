@@ -96,18 +96,9 @@ class auto_qol {
   send() { this.c.message(': ' + [...arguments].join('\n\t - ')); }
 
   // reload
-  saveState() {
-    let state = {
-      gameId: this.myGameId,
-      name: this.myName
-    }
-    return state;
-  }
+  saveState() {}
 
-  loadState(state) {
-    this.myGameId = state.gameId;
-    this.myName = state.name;
-  }
+  loadState() {}
 
 }
 

@@ -1,24 +1,20 @@
-class AutoDailyCredit {
+class auto_daily_credit {
 
   constructor(parent) {
 
     this.parent = parent;
 
-    this.parent.mod.hookOnce('S_LOGIN', 'raw', () => {
-      if (this.parent.settings.enableDaily) {
-        let _ = this.parent.mod.trySend('C_REQUEST_RECV_DAILY_TOKEN', 1, {});
-        if (!_) {
-          this.parent.mod.warn('Unmapped protocol packet \<C_REQUEST_RECV_DAILY_TOKEN\>.');
-        }
+    this.parent.m.hookOnce('S_LOGIN', 'raw', () => {
+      if (this.parent.s.enableDaily) {
+        let _ = this.parent.m.trySend('C_REQUEST_RECV_DAILY_TOKEN', 1, {});
+        !_ ? this.parent.m.warn('Unmapped protocol packet \<C_REQUEST_RECV_DAILY_TOKEN\>.') : null;
       }
     });
 
   }
 
-  destructor() {
-    this.parent = undefined;
-  }
+  destructor() {}
 
 }
 
-module.exports = AutoDailyCredit;
+module.exports = auto_daily_credit;

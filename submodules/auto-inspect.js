@@ -1,12 +1,12 @@
-class AutoInspect {
+class auto_inspect {
 
   constructor(parent) {
 
     this.parent = parent;
 
     this.parent.hook('S_ANSWER_INTERACTIVE', 2, {}, (e) => {
-      if (this.parent.settings.enableInspect) {
-        this.parent.mod.send('C_REQUEST_USER_PAPERDOLL_INFO', 2, {
+      if (this.parent.s.enableInspect) {
+        this.parent.m.send('C_REQUEST_USER_PAPERDOLL_INFO', 2, {
           unk: false,
           name: e.name
         });
@@ -15,10 +15,8 @@ class AutoInspect {
 
   }
 
-  destructor() {
-    this.parent = undefined;
-  }
+  destructor() {}
 
 }
 
-module.exports = AutoInspect;
+module.exports = auto_inspect;

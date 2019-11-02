@@ -33,6 +33,8 @@ Support seraph via paypal donations, thanks in advance !
 ## Changelog
 <details>
 
+    2.07
+    - Removed `tera-game-state` usage
     2.06
     - Reinstated `tera-game-state`
     - Updated commands

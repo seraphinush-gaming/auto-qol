@@ -1,8 +1,8 @@
 {
 	"files": {
-		"README.md": "7d7502c89e560239be908ce5da3186390f69b4412ce3209fa0ee84a22ea4f8f3",
+		"README.md": "392e1b2a121c6d4559ee3262a0324e3445f51eae7c71c6ed0f79ed0d6f26f3ec",
 		"index.js": "06a685c8b70468c137cc16cef40ad9f59eb324e4a2d1c2a6e362c365d12f64b1",
-		"module.json": "f8b1d72c11b9e8cc70e9fc8a745366d4a370d12e585699ec3263ea5e96ba90b9",
+		"module.json": "d7f01d42539b5dfda86915078613acc15d339af2f3d1e543f070398d53729820",
 		"settings.js": "0f07ed0987ff2f4b03954e37b344d2a0bf29e8be58bd89ecc72cd34831e02efd",
 		"submodules/auto-cutscene.js": "56e74fc7451aae0265a46133c964323eae7b1b58c1ed4f2616df2a1aae4655d5",
 		"submodules/auto-daily-credit.js": "3169d6a877c8eecefd5224aa90fa6e12b401f31b1d96b1f64d1415712ef916a6",

@@ -1,3 +1,5 @@
+'use strict';
+
 class auto_inspect {
 
   constructor(parent) {

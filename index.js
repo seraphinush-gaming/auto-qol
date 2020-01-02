@@ -27,16 +27,16 @@ class auto_qol {
     // command
     this.c.add('qol', {
       'daily': () => {
-        this.s.enableDaily = !this.s.enableDaily;
-        this.send(`auto-daily ${this.s.enableDaily ? 'en' : 'dis'}abled`);
+        this.s.enable_daily = !this.s.enable_daily;
+        this.send(`auto-daily ${this.s.enable_daily ? 'en' : 'dis'}abled`);
       },
       'inspect': () => {
-        this.s.enableInspect = !this.s.enableInspect;
-        this.send(`auto-inspect ${this.s.enableInspect ? 'en' : 'dis'}abled`);
+        this.s.enable_inspect = !this.s.enable_inspect;
+        this.send(`auto-inspect ${this.s.enable_inspect ? 'en' : 'dis'}abled`);
       },
       'skip': () => {
-        this.s.enableCutscene = !this.s.enableCutscene;
-        this.send(`auto-cutscene ${this.s.enableCutscene ? 'en' : 'dis'}abled`);
+        this.s.enable_cutscene = !this.s.enable_cutscene;
+        this.send(`auto-cutscene ${this.s.enable_cutscene ? 'en' : 'dis'}abled`);
       },
       '$default': () => {
         this.send(`Invalid argument. uasge : qol [daily|inspect|skip]`);
@@ -93,7 +93,7 @@ class auto_qol {
     }
   }
 
-  send() { this.c.message(': ' + [...arguments].join('\n\t - ')); }
+  send() { this.c.message(': ' + [...arguments].join('\n - ')); }
 
   // reload
   saveState() {}

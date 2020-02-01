@@ -9,7 +9,7 @@ class auto_daily_credit {
     this.parent.m.hookOnce('S_LOGIN', 'event', () => {
       if (this.parent.s.enable_daily) {
         let _ = this.parent.m.trySend('C_REQUEST_RECV_DAILY_TOKEN', 1, {});
-        !_ ? this.parent.m.warn('Unmapped protocol packet \<C_REQUEST_RECV_DAILY_TOKEN\>.') : null;
+        !_ ? this.parent.m.log('Unmapped protocol packet \<C_REQUEST_RECV_DAILY_TOKEN\>.') : null;
       }
     });
 

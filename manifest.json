@@ -2,10 +2,10 @@
 	"files": {
 		"README.md": "392e1b2a121c6d4559ee3262a0324e3445f51eae7c71c6ed0f79ed0d6f26f3ec",
 		"index.js": "258fdb4157b2fc662d7660d3812b7b0ab29caf61a025934051146bd2462bde5a",
-		"module.json": "89aec454ba66f72b3128ed58d2b7b553eb047c062f92084824aa876d5ab829bc",
+		"module.json": "675241f5e4a03d1da7d74da211d954af29653f797dd7ce9113caac02a92caa92",
 		"settings.js": "b58af58544fd49657192257b4dbfa474b47e4d7403bb7e5244a2c8bf342009dd",
 		"submodules/auto-cutscene.js": "e3c5ce2b6f4f2e4369b0832a91ddc34e3e703d0f34703683f5243077f7309c13",
-		"submodules/auto-daily-credit.js": "a22ab692647d1328d417f6f16133953fa040ddd9c4c7a4f04c27a8648bfffc9f",
+		"submodules/auto-daily-credit.js": "9fb08a31fd347e4f254787daa32ba696982801730663a935986249dd553f57b7",
 		"submodules/auto-inspect.js": "f1da6aac3ef29b70db7b1d802d7dad721c6800dee64b845a3f3f4e86ff33a35e"
 	},
 	"defs": {
@@ -13,6 +13,7 @@
 		"C_REQUEST_RECV_DAILY_TOKEN": 1,
 		"C_REQUEST_USER_PAPERDOLL_INFO": 2,
 		"S_ANSWER_INTERACTIVE": 2,
+		"S_LOGIN": "event",
 		"S_PLAY_MOVIE": 1
 	}
 }

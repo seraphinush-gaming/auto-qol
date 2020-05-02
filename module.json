@@ -1,6 +1,6 @@
 {
   "author": "seraphinush",
-  "conflicts": ["auto-cutscene", "auto-inspect", "skip-cutscene"],
+  "conflicts": ["auto-cutscene","auto-inspect","skip-cutscene"],
   "description": "tera-toolbox compilation module for automated functions",
   "disableAutoUpdate": false,
   "donationUrl": "https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=B7QQJZV9L5P2J&source=url",
@@ -11,9 +11,7 @@
     "settingsFile": "config.json",
     "settingsMigrator": "settings.js"
   },
-  "servers": [
-    "https://raw.githubusercontent.com/seraphinush-gaming/auto-qol/master/"
-  ],
-  "supportUrl": "https://github.com/seraphinush-gaming/auto-qol/blob/master/README.md",
-  "version": "2.07.04"
+  "servers": ["https://raw.githubusercontent.com/ylennia-archives/auto-qol/master/"],
+  "supportUrl": "https://github.com/ylennia-archives/auto-qol/blob/master/README.md",
+  "version": "2.07.05"
 }
